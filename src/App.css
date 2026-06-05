@@ -237,9 +237,12 @@
 .hero-image-wrapper {
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
   align-items: center;
   z-index: 1;
+  margin-top: -80px;
 }
 
 .hero-social-card {
@@ -810,6 +813,12 @@
     margin-top: 40px;
   }
 
+  .hero-social-card,
+  .hero-blog-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
   .hero-overlay-card {
     position: static;
     transform: none;
@@ -1154,4 +1163,83 @@
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
+}
+
+/* Blog Card in Hero */
+.hero-blog-card {
+  background: rgba(20, 20, 20, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 20px;
+  width: 280px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-blog-card:hover {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(239, 68, 68, 0.2);
+}
+
+.blog-card-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.blog-card-text {
+  flex-grow: 1;
+}
+
+.blog-card-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.blog-card-title-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.blog-card-arrow {
+  width: 24px;
+  height: 24px;
+  color: var(--accent-red);
+  flex-shrink: 0;
+}
+
+/* Admin Button in Footer */
+.admin-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+}
+
+/* Password Modal */
+.password-modal {
+  max-width: 400px;
+}
+
+.password-modal .form-group input {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 4px;
 }

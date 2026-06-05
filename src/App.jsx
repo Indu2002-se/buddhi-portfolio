@@ -1,17 +1,33 @@
 import './App.css';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import heroImg from './assets/hero.jpeg';
 import logoImg from './assets/logo.jpeg';
 
 function App() {
+  const navigate = useNavigate();
   const [showHireForm, setShowHireForm] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showPasswordModal, setShowPasswordModal] = useState(false);
+  const [password, setPassword] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
+
+  const handlePasswordSubmit = (e) => {
+    e.preventDefault();
+    if (password === '2002') {
+      setShowPasswordModal(false);
+      setPassword('');
+      navigate('/create-blog');
+    } else {
+      alert('❌ Incorrect password!');
+      setPassword('');
+    }
+  };
 
   const projects = [
     {
@@ -205,6 +221,18 @@ function App() {
                   </a>
                 </div>
               </div>
+
+              {/* Blog Card */}
+              <div className="hero-blog-card" onClick={() => navigate('/blog')}>
+                <div className="blog-card-icon">📝</div>
+                <div className="blog-card-text">
+                  <div className="blog-card-label">Read My</div>
+                  <div className="blog-card-title-text">Blog Posts</div>
+                </div>
+                <svg className="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
             </div>
           </section>
 
@@ -385,6 +413,9 @@ function App() {
               <a href="tel:0702865781" className="footer-link">070 286 5781</a>
               <a href="https://www.linkedin.com/in/buddhi-vithanage-6302302a3/" target="_blank" rel="noreferrer" className="footer-link">LinkedIn</a>
               <a href="https://github.com/Indu2002-se" target="_blank" rel="noreferrer" className="footer-link">GitHub</a>
+              <button className="footer-link admin-btn" onClick={() => setShowPasswordModal(true)}>
+                🔒 Admin
+              </button>
             </div>
           </div>
           <div className="footer-bottom">
@@ -451,6 +482,44 @@ function App() {
 
               <button type="submit" className="modal-submit-btn" disabled={isSubmitting}>
                 {isSubmitting ? '⏳ Sending...' : 'Send Message'}
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* Password Modal */}
+      {showPasswordModal && (
+        <div className="modal-overlay" onClick={() => setShowPasswordModal(false)}>
+          <div className="modal-content password-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setShowPasswordModal(false)}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+              </svg>
+            </button>
+            
+            <div className="modal-header">
+              <div style={{fontSize: '48px', marginBottom: '16px'}}>🔒</div>
+              <h2 className="modal-title">Admin Access</h2>
+              <p className="modal-description">Enter password to create blog posts</p>
+            </div>
+
+            <form className="modal-form" onSubmit={handlePasswordSubmit}>
+              <div className="form-group">
+                <label htmlFor="password">Password</label>
+                <input 
+                  type="password" 
+                  id="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="Enter password"
+                  required
+                  autoFocus
+                />
+              </div>
+
+              <button type="submit" className="modal-submit-btn">
+                🔓 Access Blog Creator
               </button>
             </form>
           </div>
