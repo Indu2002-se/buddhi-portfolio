@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Message from Portfolio</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div style="max-width: 600px; margin: 40px auto; background-color: #ffffff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); overflow: hidden;">
+    
+    <!-- Header -->
+    <div style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); padding: 30px 40px; text-align: center;">
+      <div style="background-color: rgba(255, 255, 255, 0.2); width: 60px; height: 60px; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 32px;">
+        ✉️
+      </div>
+      <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">New Message</h1>
+      <p style="margin: 8px 0 0; color: rgba(255, 255, 255, 0.9); font-size: 14px;">From Your Portfolio Website</p>
+    </div>
+
+    <!-- Greeting -->
+    <div style="padding: 30px 40px 20px;">
+      <p style="margin: 0; color: #2c3e50; font-size: 16px; line-height: 1.6;">
+        Hello Buddhi! 👋<br>
+        You have received a new message from your portfolio contact form.
+      </p>
+    </div>
+
+    <!-- Sender Information -->
+    <div style="margin: 0 40px 20px; background-color: #f8f9fa; border-radius: 12px; padding: 25px; border-left: 4px solid #ef4444;">
+      <div style="color: #1a202c; font-size: 20px; font-weight: 700; margin-bottom: 8px;">{{name}}</div>
+      <div style="margin: 8px 0;">
+        <span style="color: #ef4444; font-weight: 600;">📧 Email:</span> 
+        <a href="mailto:{{email}}" style="color: #3182ce; text-decoration: none; font-size: 14px;">{{email}}</a>
+      </div>
+    </div>
+
+    <!-- Message Content -->
+    <div style="padding: 0 40px 30px;">
+      <h2 style="color: #1a202c; font-size: 18px; font-weight: 700; margin: 0 0 20px; padding-bottom: 10px; border-bottom: 2px solid #e2e8f0;">
+        📝 Message
+      </h2>
+
+      <div style="background-color: #ffffff; border: 2px solid #e2e8f0; border-radius: 12px; padding: 20px; margin-bottom: 25px;">
+        <div style="color: #4a5568; font-size: 15px; line-height: 1.7; white-space: pre-wrap;">{{message}}</div>
+      </div>
+
+      <!-- Action Button -->
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="mailto:{{email}}?subject=Re: Your Message" style="display: inline-block; background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: #ffffff; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-weight: 600; font-size: 15px; box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);">
+          📧 Reply to {{name}}
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #f8f9fa; padding: 25px 40px; border-top: 1px solid #e2e8f0;">
+      <div style="text-align: center; color: #718096; font-size: 13px; line-height: 1.6;">
+        <p style="margin: 0 0 8px;">This message was automatically sent from your portfolio website contact form.</p>
+        <p style="margin: 0; font-weight: 600; color: #1a202c;">
+          🌐 Buddhi Vithanage Portfolio
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer Note -->
+  <div style="text-align: center; margin: 20px 0; color: #a0aec0; font-size: 12px;">
+    <p style="margin: 0;">📬 Respond promptly to provide excellent service!</p>
+  </div>
+</body>
+</html>
