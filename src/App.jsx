@@ -1,12 +1,13 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
-import heroImg from './assets/hero.jpeg';
 import logoImg from './assets/logo.jpeg';
+import Spline from '@splinetool/react-spline';
 
 function App() {
   const navigate = useNavigate();
+  const missionTitleRef = useRef(null);
   const [showHireForm, setShowHireForm] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showPasswordModal, setShowPasswordModal] = useState(false);
@@ -16,6 +17,51 @@ function App() {
     email: '',
     message: ''
   });
+
+  // Add liquid bubble effect to mission title
+  useEffect(() => {
+    const missionTitle = missionTitleRef.current;
+    if (!missionTitle) return;
+
+    // Split text into individual characters while preserving HTML structure
+    const wrapCharacters = (element) => {
+      const walker = document.createTreeWalker(
+        element,
+        NodeFilter.SHOW_TEXT,
+        null,
+        false
+      );
+
+      const textNodes = [];
+      let node;
+      while (node = walker.nextNode()) {
+        if (node.textContent.trim()) {
+          textNodes.push(node);
+        }
+      }
+
+      textNodes.forEach(textNode => {
+        const characters = textNode.textContent.split('');
+        const fragment = document.createDocumentFragment();
+        
+        characters.forEach(char => {
+          if (char === ' ') {
+            fragment.appendChild(document.createTextNode(' '));
+          } else {
+            const span = document.createElement('span');
+            span.textContent = char;
+            span.className = 'liquid-char';
+            span.style.display = 'inline-block';
+            fragment.appendChild(span);
+          }
+        });
+        
+        textNode.parentNode.replaceChild(fragment, textNode);
+      });
+    };
+
+    wrapCharacters(missionTitle);
+  }, []);
 
   const handlePasswordSubmit = (e) => {
     e.preventDefault();
@@ -239,7 +285,7 @@ function App() {
           {/* Mission Statement */}
           <section id="about" className="mission">
             <div className="mission-badge">✦ About Me</div>
-            <h2 className="mission-title">
+            <h2 className="mission-title liquid-text" ref={missionTitleRef}>
               I <span className="text-red">design</span> and deploy <span className="text-red">robust solutions</span><br/>
               with people at the core, ensuring<br/>
               every <span className="text-red">system enhances</span> real user<br/>
@@ -249,12 +295,17 @@ function App() {
 
           {/* Projects Section */}
           <section id="projects" className="video-section">
-            <div className="video-container">
-              <div className="video-badge">✦ Featured Projects</div>
-              <h3 className="video-title">Built with <span className="text-red">Passion & Precision</span></h3>
-              <p style={{color: 'var(--text-secondary)', fontSize: '14px', marginBottom: '20px'}}>
-                Explore my latest work showcasing full-stack development, microservices, and mobile applications.
-              </p>
+            <div className="video-container spline-container">
+              <div className="spline-background">
+                <Spline scene="https://prod.spline.design/NeX1oA67p13Mms27/scene.splinecode" />
+              </div>
+              <div className="video-content-overlay">
+                <div className="video-badge">✦ Featured Projects</div>
+                <h3 className="video-title">Built with <span className="text-red">Passion & Precision</span></h3>
+                <p style={{color: 'var(--text-secondary)', fontSize: '14px', marginBottom: '20px'}}>
+                  Explore my latest work showcasing full-stack development, microservices, and mobile applications.
+                </p>
+              </div>
             </div>
 
             <div className="testimonial-section">
