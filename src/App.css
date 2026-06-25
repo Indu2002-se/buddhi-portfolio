@@ -2,22 +2,6 @@
   min-height: 100vh;
   background: #000;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-html, body {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-
-* {
-  -webkit-tap-highlight-color: transparent;
-}
-
-body {
-  overscroll-behavior: none;
 }
 
 /* Header */
@@ -118,11 +102,10 @@ body {
   margin-right: -40px;
   padding-left: 40px;
   padding-right: 40px;
-  background-image: url('./assets/hero.jpeg');
+  background-image: url('./assets/hero1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
 }
 
 .hero::before {
@@ -615,16 +598,13 @@ body {
   height: 100%;
   z-index: 0;
   opacity: 0.7;
-  pointer-events: none;
-  touch-action: none;
+  pointer-events: all;
 }
 
 .spline-background canvas {
   width: 100% !important;
   height: 100% !important;
   border-radius: 24px;
-  pointer-events: none !important;
-  touch-action: none !important;
 }
 
 .video-content-overlay {
@@ -981,13 +961,11 @@ body {
   }
 
   .spline-container {
-    min-height: 300px;
+    min-height: 350px;
   }
 
   .spline-background {
-    opacity: 0.4;
-    pointer-events: none !important;
-    touch-action: none !important;
+    opacity: 0.5;
   }
 
   .video-content-overlay {
@@ -1019,25 +997,10 @@ body {
     margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: scroll;
-    min-height: auto;
   }
 
   .hero-title {
     font-size: 42px;
-  }
-
-  .hero-image-wrapper {
-    width: 100%;
-    margin-top: 40px;
-  }
-
-  .hero-social-card,
-  .hero-blog-card {
-    width: 100%;
-    max-width: 100%;
   }
 
   .stats-grid {
@@ -1131,37 +1094,6 @@ body {
   .footer-links {
     flex-direction: column;
     gap: 16px;
-  }
-}
-
-/* Extra small devices */
-@media (max-width: 480px) {
-  .hero {
-    min-height: auto;
-    padding: 30px 0 40px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .hero-title {
-    font-size: 32px;
-    line-height: 1.2;
-  }
-
-  .hero-description {
-    font-size: 14px;
-  }
-
-  .spline-container {
-    min-height: 250px;
-  }
-
-  .contact-title {
-    font-size: 28px;
-  }
-
-  .mission-title {
-    font-size: 24px;
   }
 }
 
