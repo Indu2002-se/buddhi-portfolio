@@ -1,0 +1,319 @@
+- generic [ref=e3]:
+  - generic [aria-hidden]:
+    - generic: BV.
+    - generic: IDEAS. CODE. IMPACT.
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - link "Buddhi Vithanage — home" [ref=e7] [cursor=pointer]:
+        - /url: "#home"
+        - text: BV.
+      - link "Buddhi Vithanage SOFTWARE ENGINEER" [ref=e8] [cursor=pointer]:
+        - /url: "#home"
+        - text: Buddhi Vithanage
+        - generic [ref=e9]: SOFTWARE ENGINEER
+      - navigation "Main navigation" [ref=e10]:
+        - link "Work" [ref=e11] [cursor=pointer]:
+          - /url: "#projects"
+        - link "About" [ref=e12] [cursor=pointer]:
+          - /url: "#about"
+        - link "Skills" [ref=e13] [cursor=pointer]:
+          - /url: "#skills"
+        - link "Let’s talk" [ref=e14] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e17]:
+    - region "Buddhi — Buddhi Vithanage, Software Engineer" [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - generic [ref=e21]: SOFTWARE ENGINEER & FULL-STACK DEVELOPER
+          - generic [ref=e22]: CREATIVE PORTFOLIO / 2026
+        - heading "Buddhi — Buddhi Vithanage, Software Engineer" [level=1] [ref=e23]:
+          - img "Buddhi" [ref=e24]:
+            - generic [ref=e25]: BUDDHI
+          - generic [ref=e26]: — Buddhi Vithanage, Software Engineer
+        - generic:
+          - img "Buddhi Vithanage holding a microphone"
+        - generic [ref=e27]:
+          - paragraph [ref=e28]: BUILDING INNOVATIVESOFTWARE SOLUTIONSTHAT MATTER.
+          - link "EXPLORE MY WORK" [ref=e29] [cursor=pointer]:
+            - /url: "#projects"
+          - paragraph [ref=e32]:
+            - img "Buddhi Vithanage" [ref=e33]
+        - generic [ref=e34]:
+          - generic [ref=e35]: THE PERSON BEHIND THE CODE
+          - paragraph [ref=e36]: Full-stack developer specializing in Java, Spring Boot, and modern web technologies.
+          - link "A little about me" [ref=e37] [cursor=pointer]:
+            - /url: "#about"
+          - generic [ref=e40]: JAVA & SPRING BOOTWEB & MOBILE DEVELOPMENT
+        - generic [ref=e44]:
+          - link "SCROLL TO EXPLORE" [ref=e45] [cursor=pointer]:
+            - /url: "#projects"
+          - generic [ref=e48]: IDEAS. CODE. REAL-WORLD IMPACT.
+    - region "A selection of what I build." [ref=e49]:
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]: 01 / SELECTED PROJECTS
+          - generic [ref=e55]: BUILT WITH PASSION & PRECISION
+        - generic [ref=e56]:
+          - heading [level=2] [ref=e57]:
+            - text: A selection of
+            - emphasis [ref=e58]: what I build.
+          - generic [ref=e59]:
+            - paragraph [ref=e60]: Explore my latest work showcasing full-stack development, microservices, and mobile applications.
+            - link "EXPLORE MY GITHUB" [ref=e61] [cursor=pointer]:
+              - /url: https://github.com/Indu2002-se
+        - generic [ref=e64]:
+          - group "Filter projects" [ref=e65]:
+            - button "All projects 04" [pressed] [ref=e66] [cursor=pointer]
+            - button "Web" [ref=e67] [cursor=pointer]
+            - button "AI & microservices" [ref=e68] [cursor=pointer]
+            - button "Mobile" [ref=e69] [cursor=pointer]
+          - generic [ref=e70]: 04 PROJECTS IN FOCUS
+        - generic [ref=e71]:
+          - article [ref=e72]:
+            - generic [ref=e73]:
+              - img "Resort management dashboard concept with bookings, rooms and reservations" [ref=e74]
+              - generic: UI DESIGN CONCEPT
+            - generic [ref=e75]:
+              - generic [ref=e76]: 01 / Web application
+              - heading "Resort Management System" [level=3] [ref=e80]
+              - paragraph [ref=e81]: Developed a resort management system using Java Servlets and JSP to handle bookings, customer records, and administrative operations.
+              - list "Project technologies" [ref=e82]:
+                - listitem [ref=e83]: Java 17
+                - listitem [ref=e84]: Servlet
+                - listitem [ref=e85]: MySQL
+                - listitem [ref=e86]: Maven
+                - listitem [ref=e87]: IntelliJ IDEA
+              - generic [ref=e88]:
+                - link "View source code" [ref=e89] [cursor=pointer]:
+                  - /url: https://github.com/Indu2002-se/Ocean-view-resort
+                - generic [aria-hidden] [ref=e92]: "01"
+          - article [ref=e93]:
+            - generic [ref=e94]:
+              - img "Event management dashboard concept with tickets, analytics and registrations" [ref=e95]
+              - generic: UI DESIGN CONCEPT
+            - generic [ref=e96]:
+              - generic [ref=e97]: 02 / Full-stack platform
+              - heading "Event Management System" [level=3] [ref=e101]
+              - paragraph [ref=e102]: Built a full-featured event management platform with a modern admin dashboard supporting complete CRUD operations. Enabled event organizers to create, manage, and track events with real-time analytics and user management.
+              - list "Project technologies" [ref=e103]:
+                - listitem [ref=e104]: Java 17
+                - listitem [ref=e105]: Spring Boot 3.5.5
+                - listitem [ref=e106]: MySQL
+                - listitem [ref=e107]: React.js
+                - listitem [ref=e108]: RESTful APIs
+                - listitem [ref=e109]: Maven
+              - generic [ref=e110]:
+                - link "View source code" [ref=e111] [cursor=pointer]:
+                  - /url: https://github.com/Indu2002-se/EventManagement-SpringBoot
+                - generic [aria-hidden] [ref=e114]: "02"
+          - article [ref=e115]:
+            - generic [ref=e116]:
+              - img "AI fitness dashboard concept with workout progress and recommendations" [ref=e117]
+              - generic: UI DESIGN CONCEPT
+            - generic [ref=e118]:
+              - generic [ref=e119]: 03 / AI & microservices
+              - heading "AI Powered Fitness System" [level=3] [ref=e123]
+              - paragraph [ref=e124]: AI-Powered Fitness is a Spring Boot–based microservice application designed to deliver intelligent fitness solutions. It leverages AI-driven insights to manage workouts, track user progress, and provide personalized recommendations.
+              - list "Project technologies" [ref=e125]:
+                - listitem [ref=e126]: Spring Boot Microservices
+                - listitem [ref=e127]: RabbitMQ
+                - listitem [ref=e128]: Google Gemini API
+                - listitem [ref=e129]: IntelliJ IDEA
+              - generic [ref=e130]:
+                - link "View source code" [ref=e131] [cursor=pointer]:
+                  - /url: https://github.com/Indu2002-se/Fitness-microservice-springboot
+                - generic [aria-hidden] [ref=e134]: "03"
+          - article [ref=e135]:
+            - generic [ref=e136]:
+              - img "Cycle rental app concept showing discovery, bicycle details and active rental" [ref=e137]
+              - generic: UI DESIGN CONCEPT
+            - generic [ref=e138]:
+              - generic [ref=e139]: 04 / Android application
+              - heading "Cycle Rental Shop Mobile Application" [level=3] [ref=e143]
+              - paragraph [ref=e144]: Designed and implemented a mobile app using Kotlin to streamline cycle rentals, featuring real-time availability, customer registration, and rental history management.
+              - list "Project technologies" [ref=e145]:
+                - listitem [ref=e146]: Kotlin
+                - listitem [ref=e147]: Room Database
+                - listitem [ref=e148]: Android Studio
+              - generic [ref=e149]:
+                - generic [ref=e150]: Repository link not provided
+                - generic [aria-hidden] [ref=e151]: "04"
+        - paragraph [ref=e152]: Project covers are illustrative visual concepts, not screenshots of the applications.
+    - region "Ideas into real experiences." [ref=e153]:
+      - generic [ref=e154]:
+        - generic [ref=e155]:
+          - generic [ref=e156]: 02 / ABOUT ME
+          - generic [ref=e159]: A LITTLE MORE PERSONAL
+        - generic [ref=e160]:
+          - generic [ref=e161]:
+            - img "Portrait of Buddhi Vithanage with a microphone" [ref=e163]
+            - generic [ref=e164]: BUDDHI VITHANAGE — SOFTWARE ENGINEER
+            - generic [ref=e165]:
+              - generic [ref=e166]: THE PERSON BEHIND THE CODE
+              - text: People at the core.
+              - emphasis [ref=e167]: Purpose in the code.
+          - generic [ref=e168]:
+            - generic [ref=e169]: HELLO, I’M BUDDHI.
+            - heading [level=2] [ref=e170]:
+              - text: Ideas into
+              - emphasis [ref=e171]: real experiences.
+            - paragraph [ref=e172]: I transform ideas into scalable, production-ready applications that users love.
+            - paragraph [ref=e173]: Full-stack developer specializing in Java, Spring Boot, and modern web technologies.
+            - paragraph [ref=e174]: Specialized in building scalable backend systems, RESTful APIs, and modern web applications.
+            - generic [ref=e175]:
+              - img "Buddhi Vithanage" [ref=e176]
+              - link "Contact Buddhi" [ref=e177] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e180]:
+          - heading "End-to-End Development Services" [level=3] [ref=e181]
+          - paragraph [ref=e182]: I turn ambitious ideas into battle-tested features your users trust—combining backend strategy, web engineering, and mobile development.
+        - generic [ref=e183]:
+          - article [ref=e184]:
+            - text: "01"
+            - heading "Java & Spring Boot Development" [level=4] [ref=e187]: Java & Spring BootDevelopment
+            - paragraph [ref=e188]: Spring Boot MicroservicesRESTful API Development
+          - article [ref=e189]:
+            - text: "02"
+            - heading "Full-Stack Web Development" [level=4] [ref=e192]: Full-Stack WebDevelopment
+            - paragraph [ref=e193]: React.js & Modern FrontendMySQL & Database Design
+          - article [ref=e194]:
+            - text: "03"
+            - heading "Mobile App Development (Kotlin)" [level=4] [ref=e197]: Mobile AppDevelopment (Kotlin)
+            - paragraph [ref=e198]: Kotlin · Room DatabaseAndroid Studio
+    - region "A thoughtful stack. Built for possibility." [ref=e199]:
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - generic [ref=e202]: 03 / TECHNICAL EXPERTISE
+          - generic [ref=e205]: THE TOOLS BEHIND THE WORK
+        - generic [ref=e206]:
+          - heading [level=2] [ref=e207]:
+            - text: A thoughtful stack.
+            - emphasis [ref=e208]: Built for possibility.
+          - generic [ref=e209]:
+            - paragraph [ref=e210]: Backend systems, modern web applications, and mobile development.
+            - generic [ref=e211]: JAVA & SPRING BOOT AT THE CORE
+        - list "Technical skills and tools" [ref=e212]:
+          - listitem [ref=e213]:
+            - generic [ref=e217]:
+              - heading "Java 17" [level=3] [ref=e218]
+              - generic [ref=e219]: BACKEND DEVELOPMENT
+          - listitem [ref=e220]:
+            - generic [ref=e224]:
+              - heading "Spring Boot" [level=3] [ref=e225]
+              - generic [ref=e226]: APIS & MICROSERVICES
+          - listitem [ref=e227]:
+            - generic [ref=e231]:
+              - heading "React.js" [level=3] [ref=e232]
+              - generic [ref=e233]: MODERN FRONTEND
+          - listitem [ref=e234]:
+            - generic [ref=e238]:
+              - heading "Kotlin" [level=3] [ref=e239]
+              - generic [ref=e240]: ANDROID DEVELOPMENT
+          - listitem [ref=e241]:
+            - generic [ref=e245]:
+              - heading "MySQL" [level=3] [ref=e246]
+              - generic [ref=e247]: DATABASE DESIGN
+          - listitem [ref=e248]:
+            - generic [ref=e252]:
+              - heading "Room Database" [level=3] [ref=e253]
+              - generic [ref=e254]: MOBILE DATA STORAGE
+          - listitem [ref=e255]:
+            - generic [ref=e259]:
+              - heading "RabbitMQ" [level=3] [ref=e260]
+              - generic [ref=e261]: MESSAGING
+          - listitem [ref=e262]:
+            - generic [ref=e266]:
+              - heading "Google Gemini API" [level=3] [ref=e267]
+              - generic [ref=e268]: AI INTEGRATION
+          - listitem [ref=e269]:
+            - generic [ref=e273]:
+              - heading "Maven" [level=3] [ref=e274]
+              - generic [ref=e275]: BUILD TOOLING
+          - listitem [ref=e276]:
+            - generic [ref=e280]:
+              - heading "IntelliJ IDEA" [level=3] [ref=e281]
+              - generic [ref=e282]: DEVELOPMENT ENVIRONMENT
+          - listitem [ref=e283]:
+            - generic [ref=e287]:
+              - heading "Android Studio" [level=3] [ref=e288]
+              - generic [ref=e289]: ANDROID TOOLING
+          - listitem [ref=e290]:
+            - generic [ref=e294]:
+              - heading "RESTful APIs" [level=3] [ref=e295]
+              - generic [ref=e296]: SYSTEM INTEGRATION
+        - generic [ref=e297]:
+          - generic [ref=e298]: ALSO IN MY TOOLKIT
+          - paragraph [ref=e299]: Servlets & JSP · Spring Boot Microservices · Database Design
+    - region "THE REASON BEHIND IT ALL" [ref=e302]:
+      - generic [ref=e303]:
+        - generic [ref=e304]:
+          - generic [ref=e305]: THE REASON BEHIND IT ALL
+          - generic [aria-hidden] [ref=e306]: “
+        - blockquote [ref=e307]:
+          - paragraph [ref=e308]:
+            - text: I design and deploy robust solutions with
+            - emphasis [ref=e309]: people at the core,
+            - text: ensuring every system enhances real user experiences.
+          - generic [ref=e310]: BUDDHI VITHANAGE SOFTWARE ENGINEER
+    - region "Let’s create something meaningful." [ref=e313]:
+      - generic [ref=e314]:
+        - generic [ref=e315]:
+          - generic [ref=e316]: 04 / GET IN TOUCH
+          - generic [ref=e319]: GOOD THINGS START WITH A CONVERSATION
+        - generic [ref=e320]:
+          - generic [ref=e321]:
+            - heading [level=2] [ref=e322]:
+              - text: Let’s createsomething
+              - emphasis [ref=e323]: meaningful.
+            - paragraph [ref=e324]: Have a project in mind? Let’s work together.
+            - generic [ref=e325]:
+              - generic [ref=e326]:
+                - link "bwithanage327@gmail.com" [ref=e327] [cursor=pointer]:
+                  - /url: mailto:bwithanage327@gmail.com
+                - button "Copy email address" [ref=e331] [cursor=pointer]
+              - link "070 286 5781" [ref=e334] [cursor=pointer]:
+                - /url: tel:0702865781
+              - generic [ref=e338]:
+                - link "GitHub" [ref=e339] [cursor=pointer]:
+                  - /url: https://github.com/Indu2002-se
+                - link "LinkedIn" [ref=e344] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/buddhi-vithanage-6302302a3/
+            - status [ref=e349]
+          - generic [ref=e350]:
+            - generic [ref=e351]: TELL ME ABOUT YOUR IDEA
+            - heading "Let’s Work Together" [level=3] [ref=e352]
+            - paragraph [ref=e353]: Share a few details about your project or inquiry.
+            - generic [ref=e354]:
+              - generic [ref=e355]:
+                - generic [ref=e356]: Your name *
+                - textbox "Your name *" [ref=e357]:
+                  - /placeholder: Your name
+              - generic [ref=e358]:
+                - generic [ref=e359]: Email address *
+                - textbox "Email address *" [ref=e360]:
+                  - /placeholder: you@example.com
+              - generic [ref=e361]:
+                - generic [ref=e362]: A little about your project *
+                - textbox "A little about your project *" [ref=e363]:
+                  - /placeholder: The idea, the challenge, the possibilities…
+              - button "SEND MESSAGE" [ref=e364] [cursor=pointer]
+              - paragraph [ref=e367]: Send your message directly. I’ll get back to you as soon as possible.
+              - status
+  - contentinfo [ref=e368]:
+    - generic [ref=e369]:
+      - generic [ref=e370]:
+        - link "Back to top" [ref=e371] [cursor=pointer]:
+          - /url: "#home"
+          - text: BV.
+        - paragraph [ref=e372]: Passionate about creating efficient, scalable solutionsthat solve real-world problems.
+        - link "Blog" [ref=e373] [cursor=pointer]:
+          - /url: /blog
+        - link "Admin" [ref=e374] [cursor=pointer]:
+          - /url: /create-blog
+        - link "BACK TO TOP" [ref=e375] [cursor=pointer]:
+          - /url: "#home"
+      - generic [ref=e378]:
+        - generic [ref=e379]: © 2026 BUDDHI VITHANAGE. ALL RIGHTS RESERVED.
+        - generic [ref=e380]: THANK YOU FOR VISITING
